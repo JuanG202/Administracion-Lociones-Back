@@ -14,4 +14,3 @@ const loteSchema = new mongoose.Schema(
 
 module.exports = mongoose.model("Lote", loteSchema);
 
-.
