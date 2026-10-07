@@ -1,4 +1,4 @@
-const Premium = require("..models/Premium");
+const Premium = require("../models/premium");
 
 const obtener = async (req, res) => {
   try {
