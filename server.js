@@ -7,6 +7,7 @@ const conectarDB = require("./config/db");
 
 const ventaRoutes = require("./routes/ventaRoutes");
 const loteRoutes = require("./routes/loteRoutes");
+const premiumRoutes = require("./routes/Premiumroutes");
 
 const app = express();
 
@@ -23,6 +24,8 @@ app.get("/", (req, res) => {
 app.use("/api/ventas", ventaRoutes);
 
 app.use("/api/lotes", loteRoutes);
+
+app.use("/api/premium", premiumRoutes);
 
 const PORT = process.env.PORT || 5000;
 
